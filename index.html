@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Krystal Gayle</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+
+
+</head>
+<body>
+      <div class="slide active" id="slide1">
+            <div class="card">
+                  <div class="card-img1" id="img01"></div>
+                    <h1 id="title"> Krystal Gayle </h1>
+                    <div class="prevnext">
+                          <a  class="pn-btn" id="prev" href="#slide5">  </a>
+                          <br>
+                          <div class="arrow">
+                            <a class="pn-btn" id="next" href="#slide2">  </a>
+                          </div>
+                    </div>
+                  </div>
+            </div>
+
+      <div class="slide" id="slide2">
+            <div class="card">
+                  <div class="card-img" id="img02"></div>
+                  <div class="card-content">
+
+                        <p class="card-theme">Who</p>
+                        <h2 class="card-header">About Me</h2>
+                        <p class="card-para">
+
+                          I'm a passionate  Social Worker.  I'm confident that my skills and my passion for helping clients are a
+                          perfect match for this position. I would bring a broad range of skills, including,Working with clients of
+                          varied ages and grade levels in counseling using evidence based therapeutic interventions, engaging Parents
+                          in the therapeutic process and Timely and effective management of time and documentation of all services
+
+
+
+
+                        </p>
+                          <div class="pointer1">
+                            <a href="#slide1"> ⇡ </a>
+                            <br>
+                            <a href="#slide3"> ⇣ </a>
+                          </div>
+
+                  </div>
+            </div>
+      </div>
+      <div class="slide" id="slide3">
+            <div class="card">
+                  <div class="card-img" id="img03"></div>
+                  <div class="card-content">
+                        <p class="card-theme">What</p>
+                        <h2 class="card-header"> Experince </h2>
+                        <p class="card-para">
+<div class="exp">
+
+
+                        <h3 id="exp-title"><a href="https://thrivenyc.cityofnewyork.us/">ThriveNYC : Mental Health Service Corps</a>  </h3>
+                        <h4 id="date"> September 2018- Present </h4>
+                        <ul id="exp-point">
+                          <li>Engage the client in weekly (or as needed) individual and or group sessions based on the
+                            utilization of Evidence Based practice interventions and the Treatment Plan.</li>
+                            <br>
+                          <li>Attend and participate in all appropriate clinical case conferences, in service training sessions, and staff meetings</li>
+
+                        </ul>
+                        <br>
+                        <h3 id="exp-title"> Heartshare St Vincient’s Services  </h3>
+                        <h4 id="date"> Dec 2016- August 2018 </h4>
+                        <ul id="exp-point">
+                          <li>Develop relationships with community organizations and resources
+                            to improve service access for children in the program. </li>
+                            <br>
+                            <li>Coordinate treatment services between the Youth Reception Center and community organizations to
+                              ensure continuity of care. Arrange for transportation to appointments as necessary</li>
+                        </ul>
+
+
+
+</div>
+
+
+
+                        </p>
+
+                        <div class="pointer2">
+                          <a href="#slide2"> ⇡ </a>
+                          <br>
+                          <a href="#slide4"> ⇣ </a>
+                        </div>
+
+                  </div>
+            </div>
+      </div>
+      <div class="slide" id="slide4">
+            <div class="card">
+                  <div class="card-img" id="img04"></div>
+                  <div class="card-content">
+                        <p class="card-theme">Where</p>
+                        <h2 class="card-header">Resume</h2>
+                        <p class="card-para">
+                          For more infomation please click the link below
+                        </p>
+                        <div class="pointer3">
+                          <a href="#slide3"> ⇡ </a>
+                          <br>
+                          <a href="#slide5"> ⇣ </a>
+                        </div>
+
+                  <a id= "bigger" class="card-link" href="https://drive.google.com/file/d/1muSozppylMP9rDmlc7B7hxh82oMjba8J/view?usp=drivesdk">Read</a>
+                  </div>
+            </div>
+      </div>
+      <div class="slide" >
+        <div class="container" id="slide5">
+        <h1 id="title2"> <a href="mailto:gpmlt@aol.com"> Contact Me</a></h1>
+            <div class="pointer4">
+              <a href="#slide4"> ⇡ </a>
+              <br>
+              <a href="#slide1"> ⇣ </a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+                  </div>
+
+
+
+
+
+  <!--    <div class="prevnext">
+            <button class="pn-btn" id="prev"></button>
+            <div class="arrow">
+                <button class="pn-btn" id="next"></button>
+      </div>
+
+      </div>
+-->
+
+
+      <nav>
+
+
+          <ul class="nav-links">
+            <li><a href="#slide1"class="active"> Home</a></li>
+            <li><a href="#slide2">Me</a></li>
+            <li><a href="#slide3">Experince</a></li>
+            <li><a href="#slide4">Resume</a></li>
+            <li><a href="#slide5">Contact</a></li>
+
+          </ul>
+
+
+
+        <div class="burger" >
+          <div class="line1"></div>
+            <div class="line2"></div>
+              <div class="line3"></div>
+        </div>
+      </nav>
+
+
+      <script type="text/javascript">
+
+      const navSlide = () => {
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', () => {
+          nav.classList.toggle('nav-active');
+        });
+      }
+
+  navSlide();
+
+      </script>
+</body>
+</html>
